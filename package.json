@@ -1,0 +1,27 @@
+{
+  "name": "pomelo-red-dot",
+  "version": "1.0.1",
+  "description": "pomelo GM red-dot plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckyqqk/pomelo-red-dot.git"
+  },
+  "keywords": [
+    "red-dot",
+    "redDot"
+  ],
+  "dependencies": {
+    "redis": "^2.8.0",
+    "binary-switch" : "^1.0.0"
+  },
+  "author": "luckyqqk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luckyqqk/pomelo-red-dot/issues"
+  },
+  "homepage": "https://github.com/luckyqqk/pomelo-red-dot#readme"
+}
