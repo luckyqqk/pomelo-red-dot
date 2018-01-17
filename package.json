@@ -1,27 +1,79 @@
 {
-  "name": "pomelo-red-dot",
-  "version": "1.0.1",
+  "_args": [
+    [
+      "pomelo-red-dot",
+      "/Projects/svn/Server/chariot/game-server"
+    ]
+  ],
+  "_from": "pomelo-red-dot@latest",
+  "_id": "pomelo-red-dot@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/pomelo-red-dot",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/pomelo-red-dot-1.0.1.tgz_1515661181239_0.3995051740203053"
+  },
+  "_npmUser": {
+    "email": "luckyqqk@163.com",
+    "name": "luckyqqk"
+  },
+  "_npmVersion": "3.8.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "pomelo-red-dot",
+    "raw": "pomelo-red-dot",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/pomelo-red-dot/-/pomelo-red-dot-1.0.1.tgz",
+  "_shasum": "d9f598a1f60adb743cf94ca7e47a5ee9ca3eeaf1",
+  "_shrinkwrap": null,
+  "_spec": "pomelo-red-dot",
+  "_where": "/Projects/svn/Server/chariot/game-server",
+  "author": {
+    "name": "luckyqqk"
+  },
+  "bugs": {
+    "url": "https://github.com/luckyqqk/pomelo-red-dot/issues"
+  },
+  "dependencies": {},
   "description": "pomelo GM red-dot plugin",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d9f598a1f60adb743cf94ca7e47a5ee9ca3eeaf1",
+    "tarball": "https://registry.npmjs.org/pomelo-red-dot/-/pomelo-red-dot-1.0.1.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luckyqqk/pomelo-red-dot.git"
-  },
+  "gitHead": "e54f1f1fc79e97e1d5b015e9ab2ea814b23cc2c9",
+  "homepage": "https://github.com/luckyqqk/pomelo-red-dot#readme",
   "keywords": [
     "red-dot",
     "redDot"
   ],
-  "dependencies": {
-    "redis": "^2.8.0",
-    "binary-switch" : "^1.0.0"
-  },
-  "author": "luckyqqk",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/luckyqqk/pomelo-red-dot/issues"
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "luckyqqk@163.com",
+      "name": "luckyqqk"
+    }
+  ],
+  "name": "pomelo-red-dot",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckyqqk/pomelo-red-dot.git"
   },
-  "homepage": "https://github.com/luckyqqk/pomelo-red-dot#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
 }

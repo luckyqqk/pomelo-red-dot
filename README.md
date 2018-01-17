@@ -10,11 +10,11 @@ pomelo GM red-dot plugin
 * 每个游戏的模块不同,也不是所有的模块均需要变更提示,那么,我们需要定义出红点系统会用到的模块(redDot.json).如下:
 
 |用英文id会方便研发者直观的看出作用模块,未用数字id,是因为该id并不参与运算|红点代表功能|
-|:-------:|:--:|
-|id	      |desc|
+|:---------:|:--:|
+|id	        |desc|
 |mail	    |邮件 |
 |camp	    |阵营 |
-|guild	  |公会 |
+|guild	    |公会 |
 |active1	|活动1|
 |active2	|活动2|
 |active3	|活动3|
@@ -25,11 +25,11 @@ pomelo GM red-dot plugin
 * 由于不同游戏的ui排版不同,不可能在某一ui下固定的存在某些模块(研发过程中也可能会更改ui排版),
 * 甚至不同游戏大区的面板由一个红点系统控制,那么我们需要配置模块红点的所在ui面板(redBoard.json).如下:
 
-|红点面板         |所含红点模块             |最大版本   |红点面板说明|
+|红点面板        |所含红点模块             |最大版本    |红点面板说明|
 |:-------------:|:---------------------:|:---------:|:-------:|
-|id             |	redDot                |	maxVersion|	desc    |
+|id             |	redDot              |	maxVersion|	desc    |
 |red-dot-ui	    |mail,camp,guild        |	10        |	主ui红点 |
-|red-dot-active	|active1,active2,active3| 10        |	活动红点 |
+|red-dot-active	|active1,active2,active3| 10          |	活动红点 |
 
 * 红点系统是做提示用的,我们不必须保留所有历史变更,通常来讲,够用即可,多了反而乱而无用.
 * 当version达到最大值,就从0重新赋值,那么缓存多少个版本最好?默认10个,不合适就自己调整.
@@ -62,11 +62,11 @@ app.use(require('pomelo-red-dot'), {
         });
  ```
  4. 如何新增红点
+ * redBoardId:自定义的红点面板id
+ * idxArr:面板中状态改变的模块下标
  ```
  pomelo.app.event.emit(redBoardId, idxArr);
  ```
- * redBoardId:自定义的红点面板id
- * idxArr:面板中状态改变的模块下标
  * 例如:
  ```
  pomelo.app.event.emit(red-dot-active, [0,1]);
@@ -77,5 +77,18 @@ app.use(require('pomelo-red-dot'), {
  ```
  pomelo.app.get('redDot').getAllRedDot(cb);
  ```
+ 返回如下:
+ ```
+ {"data":{"red-dot-ui":{"version":3,"value":7},"red-dot-active":{"version":2,"value":7}}}
+ ```
+ 6. 查看某一特定面板下的红点状态则调用
+ ```
+ pomelo.app.get('redDot').getRedBinary(redBoardId, version, cb);
+ ```
+ 返回如下:
+ ```
+ {"version":3,"value":7}
+ ```
+ * 注:该方法中传入了一个version参数,客户端需要维护每个面板的version,取新状态的时候也要将该version传入,默认为0;
 
 
