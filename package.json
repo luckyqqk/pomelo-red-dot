@@ -3,17 +3,21 @@
     [
       "pomelo-red-dot",
       "/Projects/svn/Server/chariot/game-server"
+    ],
+    [
+      "pomelo-red-dot",
+      "/Projects/svn/Server/chariot/game-server"
     ]
   ],
-  "_from": "pomelo-red-dot@latest",
-  "_id": "pomelo-red-dot@1.0.1",
+  "_from": "pomelo-red-dot",
+  "_id": "pomelo-red-dot@1.0.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/pomelo-red-dot",
   "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/pomelo-red-dot-1.0.1.tgz_1515661181239_0.3995051740203053"
+    "tmp": "tmp/pomelo-red-dot-1.0.2.tgz_1516175472311_0.7007173798047006"
   },
   "_npmUser": {
     "email": "luckyqqk@163.com",
@@ -32,8 +36,8 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/pomelo-red-dot/-/pomelo-red-dot-1.0.1.tgz",
-  "_shasum": "d9f598a1f60adb743cf94ca7e47a5ee9ca3eeaf1",
+  "_resolved": "https://registry.npmjs.org/pomelo-red-dot/-/pomelo-red-dot-1.0.2.tgz",
+  "_shasum": "5d123dbfee374a69f825807d78264929436dff8d",
   "_shrinkwrap": null,
   "_spec": "pomelo-red-dot",
   "_where": "/Projects/svn/Server/chariot/game-server",
@@ -48,10 +52,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "d9f598a1f60adb743cf94ca7e47a5ee9ca3eeaf1",
-    "tarball": "https://registry.npmjs.org/pomelo-red-dot/-/pomelo-red-dot-1.0.1.tgz"
+    "shasum": "5d123dbfee374a69f825807d78264929436dff8d",
+    "tarball": "https://registry.npmjs.org/pomelo-red-dot/-/pomelo-red-dot-1.0.2.tgz"
   },
-  "gitHead": "e54f1f1fc79e97e1d5b015e9ab2ea814b23cc2c9",
+  "gitHead": "4fe92bd1f60cc87de05d7ea1cead899ece02b502",
   "homepage": "https://github.com/luckyqqk/pomelo-red-dot#readme",
   "keywords": [
     "red-dot",
@@ -75,5 +79,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
